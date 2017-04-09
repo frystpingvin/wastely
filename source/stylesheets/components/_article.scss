@@ -1,0 +1,11 @@
+.article {
+  padding: $base-spacing*2 0;
+
+  @include breakpoint($medium-screen) {
+    padding: $base-spacing*3 0;
+  }
+}
+
+.article--grey {
+  background-color: $light-gray;
+}

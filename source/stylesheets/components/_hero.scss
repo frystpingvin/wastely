@@ -1,0 +1,41 @@
+.hero {
+  @include clearfix();
+  background-image: url('/images/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: $base-spacing*2 0;
+
+  @include breakpoint($medium-screen) {
+    padding: $base-spacing*6 0;
+  }
+}
+
+.hero__content {
+  @include span(12);
+  color: white;
+
+  @include breakpoint($medium-screen) {
+    @include span(9);
+  }
+
+  @include breakpoint($large-screen) {
+    @include span(7);
+  }
+}
+
+.hero__content__text {
+  max-width: 500px;
+  margin-top: $base-spacing;
+  margin-bottom: $base-spacing + $small-spacing;
+}
+
+.hero__content__link {
+  display: inline-block;
+  margin-top: $small-spacing;
+
+  @include breakpoint($medium-screen) {
+    display: inline;
+    margin-left: $small-spacing/2;
+  }
+}
