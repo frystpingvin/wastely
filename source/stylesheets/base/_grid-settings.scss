@@ -4,6 +4,6 @@ $susy: (
 
 .container {
   @include container(1200px);
-  padding-left: $small-spacing;
-  padding-right: $small-spacing;
+  padding-left: $base-spacing;
+  padding-right: $base-spacing;
 };
